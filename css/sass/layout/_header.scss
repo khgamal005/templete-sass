@@ -1,0 +1,68 @@
+@use '../helpers/variables' as *;
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: $endirection;
+    padding: 20px 0;
+    border-bottom:1px solid #ccc ;
+    @media ($maxmobile){
+        flex-direction: column;
+            }
+    .logo{
+        flex: 1;
+        @media ($maxmobile){
+                width: 100%;
+                text-align: center;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+        }
+        h1{
+            color: red;
+
+        }
+       
+    }
+    .navbar{
+        display: flex;
+        flex: 2;
+        background-color: $maincolor;
+        border-radius: 15px;
+        @media ($maxmobile){
+            flex-direction: column;
+            width: 70%;
+            text-align: center;
+            display: none;}
+      
+         li{
+            width: 20%;
+            padding-left: 0.5rem;
+            list-style: none;
+            font-size: 18px;
+            text-align: center;
+               }
+           a{
+            color: white;
+            display: block;
+            padding: 20px 10px;
+            text-decoration: none;
+            transition: 0.3s all ease-out;
+            &:hover{
+                color: #ddd;
+            }
+           }
+
+             }
+             .bars{
+                display: none;
+                @media ($maxmobile){
+                    display: block;
+                          }
+             }
+             .active{
+                display: flex;
+             }
+
+}

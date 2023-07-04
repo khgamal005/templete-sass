@@ -1,0 +1,25 @@
+
+
+@mixin overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+
+// animation///
+
+@mixin keyframe($anim-name){
+    @-webkit-keyframes #{$anim-name}{
+        @content;
+    }
+    @-moz-keyframes #{$anim-name}{
+        @content;
+    }
+     @keyframes #{$anim-name}{
+        @content;
+    }
+}

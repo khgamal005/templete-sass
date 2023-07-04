@@ -1,0 +1,120 @@
+@use '../helpers/variables' as *;
+@use '../helpers/mixin' as *;
+
+// s{
+//     @media ($maxmobile){
+//         color: blue;
+//     }
+//     @media #{$maxsmall} {
+//         color: red;
+//     }
+//         animation: fadein 2s infinite ;
+// }
+
+// @include keyframe(fadein){
+//     0%{
+//         transform: translateX(10px);
+//     }
+//     50%{
+//         transform: translateY(2px);
+//     }
+//     100%{
+//         transform: translateY(0);
+//     }
+// }
+
+
+
+//slider
+.slider{
+    blockquote
+    {
+        font-size:20px;
+        font-style: italic;
+        line-height: 1.7;
+        color: #6d6d6d;
+        text-align: center;
+        width: 80%;
+        margin: 30px auto;
+
+    }
+    img{
+        width: 100%;
+    }
+    .bullets{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       li{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color:#ddd;
+            color: #d1d1d1;
+            margin-right: 3px;
+            border: 2px solid #ddd;
+            &.active,
+            &:hover{
+                border: 2px solid #333;
+                background-color: #fff;
+                cursor: pointer;
+
+            }
+            
+    
+        }
+    }
+  
+}
+
+//slider
+
+// services
+.main-box{
+    display: flex;
+    @media ($maxmobile){
+        flex-direction: column;
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        }
+  
+    .service-box{
+        display: flex;
+        flex-direction:column;
+    
+       &:not(:last-child){
+        padding-right: 20px;
+       }
+       p{
+        color: $graycolor;
+       }
+       a{
+        color: $maincolor;
+       }
+    }
+}
+
+// services
+//images
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    @media ($maxmobile){
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        }
+    img{
+        margin-left: 3%;
+        @media ($maxmobile){
+        
+            margin: 4px 0;
+            }
+    }
+}
+//images
+

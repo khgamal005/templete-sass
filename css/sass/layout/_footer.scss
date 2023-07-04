@@ -1,0 +1,70 @@
+@use '../helpers/variables' as *;
+
+//footer
+footer{
+    background-color: #e2e2e2;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 2rem;
+    @media ($maxmobile){
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #e2e2e2;
+
+       
+        }
+    .foot{
+        display: flex;
+        flex-direction: column;
+
+
+        text-align: center;
+        .img-foot{
+            display: flex;
+            margin-bottom: 3%;
+            @media ($maxmobile){
+                flex-direction: column;
+                width: 70%;
+                text-align: center;
+                justify-content: center;
+                margin: auto;
+                }
+            img{
+                margin-right: 5px;
+                width: 50%;
+                @media ($maxmobile){
+                  
+                    width: 80%;
+                    text-align: center;
+                    margin: auto;
+                    }
+            }
+            p{
+                width: 80%;
+
+            }
+            h4{
+                color: $maincolor;
+            }
+        }
+        &:last-child{
+            input{
+                margin-bottom: 5px;
+                border-radius: 5px;
+            }
+            button{
+                width: fit-content;
+                padding: 0.3rem;
+                background-color: $maincolor;
+                margin-top: 3px;
+            }
+        }
+    }
+}
+//footer

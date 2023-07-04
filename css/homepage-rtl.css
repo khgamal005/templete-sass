@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.header .logo h1 {
+  color: green;
+}
+.header .navbar {
+  display: flex;
+}
+.header .navbar li {
+  padding-left: 0.5rem;
+  list-style: none;
+}
+.header .navbar a {
+  color: black;
+  text-decoration: none;
+}/*# sourceMappingURL=homepage-rtl.css.map */

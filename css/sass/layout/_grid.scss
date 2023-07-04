@@ -1,0 +1,31 @@
+@use '../helpers/variables' as *;
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+    padding: 0 15px;
+    position: relative;
+    @media($maxmobile){
+        width: 480px;
+    }
+    @media #{$maxsmall}{
+        width: 750px;
+    }
+    @media #{$medium}{
+        width: 970px;
+    }
+    @media($large){
+        width: 1200px;
+    }
+   
+}
+
+
+.text-center{
+    @media($maxmobile){
+        text-align: center;
+    }
+}

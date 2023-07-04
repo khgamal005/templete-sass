@@ -1,0 +1,25 @@
+@use '../helpers/variables' as *;
+.head-border{
+position: relative;
+    h2{
+        background-color: $maincolor;
+        color: #fff;
+        margin: 40px auto;
+        text-align: center;
+        width: 400px;
+        padding: 10px 15px;
+        border-radius: 15px;
+        text-transform: uppercase;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1.5px;
+            background-color: $graycolor;
+            left: 0px;
+            top: 50%;
+            z-index: -1;
+    
+        }
+    }
+}
